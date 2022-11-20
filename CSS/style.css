@@ -1,0 +1,1112 @@
+/* Fonte INTER, usada para TÍTULOS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&family=Ubuntu:wght@500&display=swap');
+
+/* Fonte ROBOTO SLAB, usada para PARÁGRAFOS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Lato:wght@700&family=Roboto+Slab:wght@500&family=Ubuntu:wght@500&display=swap');
+
+/* Fonte POPPINS, usada na LOGO e em PARTES INTERATIVAS da página de INOVAÇÃO */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Lato:wght@700&family=Poppins:wght@500&family=Roboto+Slab:wght@500&family=Ubuntu:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* INÍCIO DO STYLE DO MENU E DO TÍTULO GERAL DA PÁGINA */
+
+header  {
+    
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgb(109, 108, 108);
+    width: 100%;
+    height: auto;
+    max-height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    padding: 0 10%;
+
+}
+
+.logotipos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    max-width: 110px;
+    padding: 8px 0;
+}
+
+.logo-escola {
+    max-width: 70px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.7px;
+}
+
+
+.nav-item {
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    
+}
+
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: #ff006e;
+    height: 3px;
+    bottom: 10px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-list-mobile {
+    display: grid;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.7px;
+    color: #000;
+}
+
+.navigation-mobile {
+    display: none;
+}
+
+.menu-hamburguer {
+    gap: 7px;
+    display: grid;
+    display: none;
+    background-color: #fff;
+}
+
+#line1, #line2, #line3 {
+    width: 2.2rem;
+    height: 4px;
+    border-radius: 120px;
+    margin: 7px;
+    background-color: #000;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-escola {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navigation-pc {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        cursor: pointer;
+        display: block;
+    }
+
+    .navigation-mobile {
+        
+        display: none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 100vw;
+        align-items: center;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 5.5rem;
+        
+    }
+
+    .nav-list-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+main {
+    font-family: 'Inter', sans-serif;
+}
+
+.titulo-home {
+    background-color: #01264d;
+    /*background-color: #0a9b8c;*/
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.5rem, 1vw + 0.7rem, 1.5rem );
+    padding: 1.1rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+    .titulo-home {
+        font-size: 0.8rem;
+    }
+}
+
+/* FIM DO STYLE DO MENU E DO TÍTULO GERAL DA PÁGINA */
+
+
+
+
+/* INÍCIO DO STYLE DA PÁGINA HOME*/
+
+.secao1-home {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem 10%;
+}
+
+.secao1-home h2 {
+    font-size: clamp(2rem, 1vw + 2.4rem, 2.6rem);
+    padding-bottom: 1rem;
+}
+
+.secao1-home p, .secao2-home p, .secao3-home p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+    padding-bottom: 0.5rem;
+}
+
+.secao1-home div {
+    width: 50%;
+    margin-left: auto;
+}
+
+.secao1-home img {
+    width: 100%;
+    max-width: 680px;
+    border-radius: 1rem;
+}
+
+main span {
+    color: #ff006e;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .secao1-home {
+        display: grid;
+        
+    }
+
+    .secao1-home div, .secao1-home img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+.secao2-home {
+    padding: 4rem 10%;
+    padding-top: 2rem;
+    background-color: #01264d;
+    color: #fff;
+}
+
+.secao2-home h2 {
+    font-size: clamp(1.5rem, 1vw + 1.8rem, 2.5rem);
+    padding-bottom: 2rem;
+}
+
+.secao2-home > .content-sec2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.secao2-home > .content-sec2 p {
+    width: 90%;
+}
+
+.secao2-home > .content-sec2 img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 950px) {
+    .secao2-home > .content-sec2 {
+        display: grid;
+    }  
+    
+    .secao2-home > .content-sec2 p{
+        width: 100%;
+    }
+
+    .secao2-home > .content-sec2 img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+}
+
+.secao3-home {
+    padding: 2rem 10% 5rem 10%;
+    
+}
+
+.secao3-home h2 {
+    font-size: clamp(1.4rem, 1vw + 1.85rem, 1.86rem);
+    padding-bottom: 1rem;
+}
+
+.secao3-home img {
+    max-width: 470px;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    display: flex;
+
+}
+
+abbr {
+    text-decoration: none;
+    text-decoration-color: #939497; 
+}
+
+.secao4-home {
+    padding: 5rem 10%;
+    padding-top: 2rem;
+    background-color: #01264d;
+    color: #fff;
+}
+
+.secao4-home p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+    width: 60%;
+    margin-left: auto;
+}
+
+.secao4-home h2 {
+    font-size: clamp(1.4rem, 1vw + 1.85rem, 1.86rem);
+    padding-bottom: 3rem;
+}
+
+.secao4-home img {
+
+    width: 100%;
+    max-height: 450px;
+    max-width: 600px;
+    border-radius: 1rem;
+}
+
+.secao4-home div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .secao4-home div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+
+    .secao4-home p {
+        width: 100%;
+    }
+}
+
+.secao5-home {
+    padding: 2rem 0 0 0;
+}
+
+.secao5-home h2 {
+    font-size: clamp(1.65rem, 1vw + 2rem, 2.5rem);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.secao5-home h3 {
+    font-size: clamp(1.3rem, 1vw + 1.45rem, 1.7rem);
+    padding-bottom: 1rem;
+   
+}
+
+.secao5-home p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+}
+
+.secao5-home .conteudo-sec5 {
+    justify-content: center;
+    display: grid;
+    gap: 4rem;
+    padding: 3rem 10%;
+}
+
+.secao5-home .conteudo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    
+}
+
+
+.secao5-home .conteudo div {
+    width: 60%;
+    padding: 1rem;
+}
+
+.secao5-home .conteudo img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+}
+
+.secao5-home .conteudo:nth-child(2) {
+    justify-content: flex-end;
+    text-align: right;
+   
+}
+
+.secao5-home .conteudo:nth-child(2) p {
+    text-align: justify;
+    text-align-last: right;
+}
+
+.secao5-home .conteudo:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.secao5-home .conteudo:nth-child(2):hover {
+    transition: 0.2s ease-in;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 770px) {
+
+    .secao5-home .conteudo-sec5 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem;
+    }
+
+    .secao5-home .conteudo-sec5 .conteudo {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .secao5-home .conteudo-sec5 .conteudo div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secao5-home .conteudo-sec5 .conteudo:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .secao5-home .conteudo-sec5 .conteudo p, .secao5-home .conteudo-sec5 .conteudo:nth-child(2) p {
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    .secao5-home .conteudo-sec5 .conteudo:hover {
+        transition: 0.2s ease-in;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+    }
+    
+    .secao5-home .conteudo-sec5 .conteudo:nth-child(2):hover {
+        transition: 0.2s ease-in;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0);
+    }
+    
+}
+
+/* FIM DO STYLE DA PÁGINA HOME*/
+
+
+
+
+/*INÍCIO DO STYLE DA PÁGINA DE INOVAÇÃO*/
+
+.img-principal-pg4 {
+    background-image: url(https://blog.espm.br/hubfs/shutterstock_1190069647-jpg.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.secao1-pg4 {
+    padding: 2rem 10%;
+    padding-top: 2rem;
+}
+
+
+.secao1-pg4 h2 {
+    font-size: clamp(1.8rem, 1vw + 2rem, 3.5rem);
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.secao1-pg4 p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+    padding-bottom: 0.5rem;
+}
+
+section span {
+    color: #ff006e;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 450px) {
+    .img-principal-pg4 {
+        height: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .titulo-home {
+        font-size: 0.8rem;
+    }
+}
+
+.secao1-pg4 h3 {
+    font-size: clamp(1.2rem, 1vw + 1.4rem, 1.7rem);
+    padding: 2.5rem 0 1rem;
+}
+
+.secao1-pg4 h4 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: clamp(1rem, 1vw + 1.3rem, 1.5rem);
+    text-align: center;
+}
+
+
+.secao1-pg4 img {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    margin: 1.5rem auto; 
+    border-radius: 1rem;
+}
+
+
+.secao2-pg4 h2 {
+    text-align: left;
+    font-size: 2.4rem;
+    padding: 0 1%;
+}
+
+@media screen and (max-width: 570px) {
+    .secao-2 h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+        overflow: hidden;
+    }
+    
+}
+
+.secao2-pg4 {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    align-content: center;
+    padding: 0 9% 2rem;
+}
+
+.container-pg4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1%;
+}
+
+.card-pg4 {
+    position: relative;
+    width: 240px;
+    height: 320px;
+    transition: 0.3s ease-out;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-pg4 .img-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-pg4 .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card-pg4 .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0.8rem;
+    background-color: #ff006e; 
+    transition: all 0.5s /*cubic-bezier(.48, -0.28, 0.41, 1.4)*/; 
+    overflow: hidden;
+    color: #fff;
+}
+
+.card-pg4:hover .content {
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: 0;
+
+}
+
+.card-pg4 .content p {
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transition: 0.3s ease-in;
+    text-align: left;
+    margin: 1.1rem 0 0 0;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.card-pg4:hover .content p {
+    opacity: 1;
+}
+
+.card-pg4 .content h4 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.card-pg4:hover {
+    box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.55);
+}
+
+@media screen and (max-width: 1300px) {
+    .secao2-pg4 h2 {
+        text-align: center;
+    }
+
+    .container-pg4 {
+        justify-content: space-evenly;
+        gap: 4rem;
+    }    
+}
+
+/*FIM DO STYLE DA PÁGINA DE INOVAÇÃO*/
+
+
+
+
+/* INÍCIO DO STYLE DO MENU DE INFRAESTRUTURA */
+
+.img-principal-pg2 {
+    background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEXnb1ry9WEk48bK6CNmyNwakL9nDnUNclN6r4_rc7-kfgUHETdP_bIPAMs2cLnESXxrBq7tdAFMiYsD9VGs5OTqdkOQp_qPB8JQtw8HsUE4YrlbQ4r9qMt15fP3qc9RN2OuhNlp8QB-eEku2bbzmKsl=w1360-h584-no?authuser=0);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 530px) {
+    .img-principal-pg2 {
+        height: 60vw;
+        width: 100%;
+    }    
+}
+
+section {
+    padding: 2rem 10% 0;
+}
+
+.secao1-pg2 h2 {
+    font-size: clamp(1.8rem, 1vw + 2rem, 3.5rem);
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+section p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+    padding-bottom: 0.5rem;
+}
+
+.secao2-pg2 h3, .secao3-pg2 h3 {
+    font-size: clamp(1.2rem, 1vw + 1.4rem, 1.7rem);
+    padding-bottom: 1rem;
+}
+
+.secao2-pg2 h4 {
+    font-size: clamp(1rem, 1vw + 1.3rem, 1.5rem) ;
+    padding-bottom: 1rem;
+}
+
+.container-sec2-pg2 {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.cards-sec2-pg2 {
+    max-width: 260px;
+    width: 100%;
+    text-align: center;
+}
+
+.cards-sec2-pg2 p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container-sec2-pg2 .content {
+    padding: 1rem;
+}
+
+
+.container-sec2-pg2 .img-container img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.secao3-pg2 {
+    padding-bottom: 2.5rem;
+}
+
+.secao3-pg2 img {
+    max-width: 700px;
+    width: 100%;
+    margin: 1.5rem auto;
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;   
+}
+
+.button-top {
+    width: 45px;
+    height: 45px;
+    background-color: #01264d;
+    position: fixed;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+    border-radius: 50%;
+    margin: -30px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.button-top img {
+    width: 50%;
+    filter: invert(100%);
+}
+
+
+@media screen and (max-width: 850px) {
+    .button-top {
+        position: relative;
+        left: 50%;
+        transform: translate(0, -50%);
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }    
+
+}
+
+/* FIM DO STYLE DO MENU DE INFRAESTRUTURA */
+
+
+
+
+/* INÍCIO DO STYLE DO MENU DE ECONOMIA */
+
+.img-principal-pg3 {
+    background-image: url(https://cdls.org.br/wp-content/uploads/cdlce_base/2021/08/265919-redator-entregar-ate-2812-as-10heconomia-mundial-quais-sao-as-10-tendencias-para-os-proximos-anos.jpg);
+
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/17/04/14/stock-exchange-3087396_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    .img-principal-pg3 {
+        height: 60vw;
+    }
+}
+
+.secao1-pg3, .secao2-pg3, .secao3-pg3 {
+    padding: 0 10%;
+}
+
+main span {
+    color: #ff006e;
+    font-weight: bolder;
+}
+
+.secao1-pg3 h2 {
+    font-size: clamp(1.8rem, 1vw + 2rem, 3.5rem);
+    color: #000;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.secao1-pg3 p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+    padding-bottom: 0.5rem;
+}
+
+
+.secao2-pg3 {
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    padding: 0rem 10%;
+
+}
+
+.secao2-pg3 div {
+    padding: 0 1rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (max-width: 1309px){
+    .secao2-pg3{
+        display: grid;
+    }
+
+    .secao2-pg3 img {
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+.secao2-pg3 {
+    padding-bottom: 2rem;
+}
+
+.secao2-pg3 img {
+    width: 100%;
+    max-width: 600px;
+    display: flex; 
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.secao2-pg3 h3, .secao3-pg3 h3, .secao4-pg3 h3 {
+    font-size: clamp(1.2rem, 1vw + 1.5rem, 2rem);
+    color: #000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.secao2-pg3 p, .secao3-pg3 p, .secao4-pg3 p {
+    font-size: clamp(0.9rem, 1vw + 0.98rem, 1.1rem);
+    line-height: 1.7rem;
+    text-align: justify;
+    font-family: 'Roboto Slab';
+    padding-bottom: 0.5rem;
+}
+
+.secao2-pg3 div p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.2;
+}
+
+.secao3-pg3 img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 1rem;
+    display: flex;
+    margin: 2rem auto;
+}
+
+
+.secao4-pg3 {
+    padding-top: 1rem;
+}
+
+.box-secao4 {
+    justify-content: center;
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 1% 4rem ;
+}
+
+
+.conteudo-sec4 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+
+.conteudo-sec4 div {
+    width: 60%;
+    padding: 1rem;
+}
+
+.conteudo-sec4 img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+}
+
+.conteudo-sec4:nth-child(2) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.conteudo-sec4:nth-child(2) p {
+    text-align: justify;
+    text-align-last: right;
+}
+
+.conteudo-sec4 h4 {
+    font-size: clamp(1rem, 1vw + 1.3rem, 1.5rem);
+    padding-bottom: 1rem;
+}
+
+.conteudo-sec4:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.conteudo-sec4:nth-child(2):hover {
+    transition: 0.2s ease-in;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 770px) {
+
+    .box-secao4 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem;
+        padding-bottom: 2rem;
+    }
+
+    .conteudo-sec4 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .conteudo-sec4 div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteudo-sec4:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-sec4 p, .conteudo-sec4:nth-child(2) p {
+        text-align: justify;
+        text-align-last: left;
+    }
+    
+    .conteudo-sec4:hover {
+        transition: 0.2s ease-in;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+    }
+    
+    .conteudo-sec4:nth-child(2):hover {
+        transition: 0.2s ease-in;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0);
+    }
+    
+}
+
+/* FIM DO STYLE DO MENU DE ECONOMIA */
+
+
+
+
+/* INÍCIO DO STYLE DO FOOTER */
+
+footer {
+    padding: 0 10%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /*background-color: #cfdee7;*/
+    background-image: linear-gradient(#cfdee7 50%, #82aaf3);
+    padding: 2rem 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+footer h2 {
+    font-size: clamp(1.2rem, 1vw + 1.4rem, 1.6rem);
+    padding-bottom: 1rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+.social-links {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+
+.social-links li {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+}
+
+.social-links a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-links img {
+    width: 20px;
+    
+}
+
+
+.social-links li:hover:nth-child(1) {
+    transition: 0.3s ease-in;
+    background-color: #01264d;
+}
+
+.social-links li:hover:nth-child(2) {
+    transition: 0.3s ease-in;
+    background-color: rgb(134, 0, 29);
+}
+
+.social-links li:hover:nth-child(3) {
+    transition: 0.3s ease-in;
+    background-color: rgb(0, 119, 255);
+}
+
+.social-links a:hover {
+    filter: invert(100%);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+    .social-links a {
+        filter: invert(100%);
+    }
+
+    .social-links li:nth-child(1) {
+        background-color: #01264d;
+    }
+    
+    .social-links li:nth-child(2) {
+        background-color: rgb(134, 0, 29);
+    }
+    
+    .social-links li:nth-child(3) {
+        background-color: rgb(0, 119, 255);
+    }
+}
